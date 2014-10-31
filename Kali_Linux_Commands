@@ -1,0 +1,51 @@
+root@kali: # mount
+root@kali: # cd /media/cdrom0
+root@kali: # /media/cdrom# ls
+root@kali: # mkdir -p /mnt/guestadditions
+root@kali: # cp -rf . /mnt/guestadditions/
+root@kali: #  cd /mnt/guestadditions/
+root@kali: # ./VBoxLinuxAdditions.run
+root@kali: #  reboot
+
+To update Kali Linux:
+root@kali: # apt-get update
+
+Package management using Apt -1
+1) List available pachages
+# apt-cache packagenames
+# apt-cache pkgnames | grep nmap
+
+2) Search for a package
+# apt-cache search nessus
+
+3) To check package information
+# apt-cache show zaproxy
+
+4) To check dependencies
+# apt-cache showpkg zapproxy
+
+5) apt-cache stats
+
+6) apt-get update
+
+7) apt-get dist-upgrade
+
+8) To remove pachage
+# apt-get remove zaproxy
+
+9) To install package
+# apt-get install zaproxy
+
+10) To install packages using wildcard
+# apt-get install '*proxy*'
+
+To restart network:
+#/etc/init.d/network restart
+
+metasploitable: msfadmin msfadmin
+
+$ sudo ifconfig eth0 192.168.10.50 netmask 255.255.255.0 up
+
+nikto tool to scan for vulnerabilities
+
+nikto -D V
