@@ -1,0 +1,11 @@
+Github commands
+
+$ git log
+$ git add <modified file name in git status> - Eg. git add README.md - will add only specific filename
+$ git add . - Will add all modified files
+$ git commit -m "test file added"
+$ git push -u origin master - First time when you push a file
+$ git push
+$ git remote add origin https://github.com/monishkumar/h-app.git
+$ git status
+$ git pull origin master
