@@ -1,0 +1,13 @@
+1. Start HTTPD -> ./apachectl -k start
+
+
+Status of a process -> ps -ef | grep <process_name>
+
+which process is using which port -> netstat -tulpn
+
+To kill a process -> kill -9 PID
+
+
+BUILD
+
+2. gradle sonarRunner -x test
