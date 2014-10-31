@@ -1,0 +1,9 @@
+SVN Checkout : http://10.188.11.19/svn/croamis/application/Source/Java/croamis
+
+jar : gradle clean b u -x test
+
+war: C:\rep\application\Source\Java\croamis\distribution\combined> gradle clean b u -Papp=customer -PwarName=customer-all
+
+delete files
+
+C:\shared\sharing\tomcat\apache-tomcat-7.0.29\bin> catalina.bat run>c:\test\customer.txt
