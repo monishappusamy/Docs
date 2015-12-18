@@ -12,3 +12,9 @@ $ git pull origin master
 
 #both creates a new branch and switches to it
 $ git checkout -b <branch_name> 
+
+#switched to the specified branch name
+$ git checkout <branch_name>
+
+# merge current branch with specified branch
+$ git merge <branch_name>
