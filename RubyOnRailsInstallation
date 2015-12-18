@@ -1,0 +1,14 @@
+For installation in MacOS - 10.11 - El Capitan
+
+Link - https://gorails.com/setup/osx/10.11-el-capitan
+
+There is a bug (https://github.com/brianmario/mysql2/issues/675) in Rails 4.2.4, which won't support MySQL2 0.4.x versions, so when after creating a project,
+ - Type the command -  
+        gem uninstall mysql2 -v 0.4.2
+ - And give the following command -
+        gem uninstall mysql2 -v 0.3.18
+ - Go inside the new project folder
+ - open gemfile
+ - remove the line gem 'mysql2' and replace that with below line,
+        gem 'mysql2', '~> 0.3.18'
+ 
