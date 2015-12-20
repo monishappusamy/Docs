@@ -10,6 +10,9 @@ $ git remote add origin https://github.com/monishkumar/h-app.git
 $ git status
 $ git pull origin master
 
+#to push a local branch to remote
+$ git push origin <branch_name>
+
 #both creates a new branch and switches to it
 $ git checkout -b <branch_name> 
 
