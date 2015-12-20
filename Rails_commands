@@ -1,0 +1,8 @@
+#start server
+rails server
+
+#stop server
+ctrl + c
+
+#create a controller
+$ rails generate controller StaticPages home help --no-test-framework
