@@ -6,3 +6,6 @@ ctrl + c
 
 #create a controller
 $ rails generate controller StaticPages home help --no-test-framework
+
+#reverting back a generate code while using generate command (Eg. $ rails generate controller FooBars baz quux)
+$ rails destroy controller FooBars baz quux
