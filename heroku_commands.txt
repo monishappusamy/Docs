@@ -1,0 +1,16 @@
+#to get Heroku console
+heroku console
+
+#to restart heroku server
+heroku restart
+
+#to get heroku logs
+heroku logs
+
+#to git push to heroku server
+git push heroku
+
+#to view all database tables and a particular table
+heroku pg:psql // You could run heroku pg:psql to fire up a Postgres console 
+\d             // issue \d to see all tables
+\d tablename   // to see details for a particular table.
