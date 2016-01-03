@@ -12,3 +12,6 @@ $ rails destroy controller FooBars baz quux
 
 #undoing migration ($ rake db:migrate)
 $ rake db:rollback
+
+#to find all existing paths
+rake routes
