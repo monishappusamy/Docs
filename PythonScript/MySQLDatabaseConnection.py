@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+# pip install MySQL-python (if you don't have MySQLdb package)
 import MySQLdb
 
 # Open database connection
