@@ -1,0 +1,3 @@
+type .row and press tab - <div class="row"></div>
+type label and press tab - <label for=""></label>
+ctrl + g - select multiple instance and edit parallely
