@@ -1,0 +1,14 @@
+# create new laravel project
+composer create-project laravel/laravel --prefer-dist
+
+# start server
+php artisan serve
+
+# .env and .env.example file 
+This file has database configuration related information
+
+# Create a new model with migration
+php artisan make:model User -m
+
+# implement migration
+php artisan migrate
