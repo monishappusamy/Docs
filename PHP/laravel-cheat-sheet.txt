@@ -1,6 +1,10 @@
 # create new laravel project
 composer create-project laravel/laravel --prefer-dist
 
+# Adding dependencies to project Ex. Add - "require": { "doctrine/orm": "v2.5.4"} line to composer.json
+composer install
+composer update
+
 # start server
 php artisan serve
 
@@ -12,3 +16,4 @@ php artisan make:model User -m
 
 # implement migration
 php artisan migrate
+
