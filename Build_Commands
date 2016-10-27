@@ -1,9 +1,13 @@
-SVN Checkout : http://10.188.11.19/svn/croamis/application/Source/Java/croamis
+SVN Checkout : http://10.188.11.19/svn/cr*****/application/Source/Java/cr*****
 
 jar : gradle clean b u -x test
 
-war: C:\rep\application\Source\Java\croamis\distribution\combined> gradle clean b u -Papp=customer -PwarName=customer-all
+war: C:\rep\application\Source\Java\cr*****\distribution\combined> gradle clean b u -Papp=customer -PwarName=customer-all
 
 delete files
 
 C:\shared\sharing\tomcat\apache-tomcat-7.0.29\bin> catalina.bat run>c:\test\customer.txt
+
+Find Maven Dependency:
+
+mvn dependency:tree  -Dincludes=com.tibco.tibrv
