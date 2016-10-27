@@ -1,13 +1,15 @@
-SVN Checkout : http://10.188.11.19/svn/cr*****/application/Source/Java/cr*****
+SVN Checkout: 
+http://10.188.11.19/svn/cr*****/application/Source/Java/cr*****
 
-jar : gradle clean b u -x test
+Build jar: 
+[COMMAND] gradle clean b u -x test
 
-war: C:\rep\application\Source\Java\cr*****\distribution\combined> gradle clean b u -Papp=customer -PwarName=customer-all
+Build war: 
+[Path] C:\rep\application\Source\Java\cr*****\distribution\combined> [COMMAND] gradle clean b u -Papp=customer -PwarName=customer-all
 
-delete files
-
+Delete files
 C:\shared\sharing\tomcat\apache-tomcat-7.0.29\bin> catalina.bat run>c:\test\customer.txt
 
 Find Maven Dependency:
-
-mvn dependency:tree  -Dincludes=com.tibco.tibrv
+[COMMAND] mvn dependency:tree  -Dincludes=com.tibco.tibrv
+[SOURCE] http://maven.apache.org/plugins/maven-dependency-plugin/examples/filtering-the-dependency-tree.html
