@@ -1,3 +1,7 @@
+/**
+ * A library methods for producing different kind of randomness
+ *
+ */
 class RandomGeneratorLibrary{
     /**
      * Use this method if you want a random number that doesn't repeat again + If 
