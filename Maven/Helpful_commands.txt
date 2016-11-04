@@ -1,10 +1,10 @@
-If you want create a jar file and install it to your local maven repository (Ex. C://users/..../.m2/repository/...):
+How to ignore central maven repo's dependency and install your own jar files to your local maven repository: (Ex. C://users/..../.m2/repository/...):
 
-1. Include below line to your pom file:
-<package>jar</package>
-(or)
-<package>pom</package>
-
-2. run> mvn package
-3. it would now create a target folder with jar files
-4. run> mvn install
+1.	Include below line to your pom.xml (to whatever module you want compile it as jar)
+a.	<packaging>jar</packaging>
+2.	Clean your target folder by typing below command in your command prompt:
+a.	mvn clean
+3.	next type below command to create jars:
+a.	mvn package
+4.	Now, you would have a target folder with all necessary jars and to upload the same to your local repo, type:
+a.	mvn install
