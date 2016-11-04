@@ -1,0 +1,10 @@
+If you want create a jar file and install it to your local maven repository (Ex. C://users/..../.m2/repository/...):
+
+1. Include below line to your pom file:
+<package>jar</package>
+(or)
+<package>pom</package>
+
+2. run> mvn package
+3. it would now create a target folder with jar files
+4. run> mvn install
