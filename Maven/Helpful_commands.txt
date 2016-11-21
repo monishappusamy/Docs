@@ -1,3 +1,4 @@
+-------------------------------
 How to ignore central maven repo's dependency and install your own jar files to your local maven repository: (Ex. C://users/..../.m2/repository/...):
 
 1.	Include below line to your pom.xml (to whatever module you want compile it as jar)
@@ -8,8 +9,8 @@ a.	mvn clean
 a.	mvn package
 4.	Now, you would have a target folder with all necessary jars and to upload the same to your local repo, type:
 a.	mvn install
-
-
+-------------------------------
+-------------------------------
 If there multiple jar files for a particular dependency (Ex. for Windows, Linux, macos etc.)(Ex. https://repo1.maven.org/maven2/org/bytedeco/javacpp-presets/tensorflow/0.9.0-1.2/) and you want to download a particular jar file only:
 
 Include one of the classifier parameter like below -
@@ -22,3 +23,12 @@ Include one of the classifier parameter like below -
             <classifier>linux-x86_64</classifier>
         </dependency>
     </dependencies>
+-------------------------------
+-------------------------------
+finding dependency tree:
+
+mvn dependency:tree -Dincludes=velocity:velocity
+
+The syntax for filter patterns is as follows:
+
+[groupId]:[artifactId]:[type]:[version]
