@@ -6,7 +6,8 @@ foreach (string part in parts)
     Console.WriteLine(part);
 Console.ReadKey();
 
-//Output:
+//Output
+
 2/17/2009 10:57:42 AM
 26
 81
