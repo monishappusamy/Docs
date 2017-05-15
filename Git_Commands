@@ -27,4 +27,6 @@ $ git branch -d <branch_name>
 
 #If you accidentally delete a file/folder in local repository and want bring back the files from remote repo
 git reset --hard
+
+#Reset to HEAD
 git reset --hard HEAD
