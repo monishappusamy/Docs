@@ -30,3 +30,9 @@ git reset --hard
 
 #Reset to HEAD
 git reset --hard HEAD
+
+#To view the diff from UI
+gitk
+
+#To view the diff in bash
+git diff <file path as shown by git status>
