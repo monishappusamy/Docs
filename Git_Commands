@@ -38,3 +38,7 @@ gitk
 
 #To view the diff in bash
 git diff <file path as shown by git status>
+
+#To Try
+#List of each commmits on oneline
+git log --pretty=oneline
