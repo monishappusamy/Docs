@@ -4,8 +4,8 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            string inputPath = "C:\\test1\\test.txt";
-            string outputPath = "C:\\test1\\test2.txt";
+            string inputPath = "C:\\test\\test.txt";
+            string outputPath = "C:\\test\\test2.txt";
 
             // Open the file to read from. 
             string readText = File.ReadAllText(inputPath);
@@ -15,7 +15,7 @@ namespace ConsoleApplication
 
             foreach (var str in readTextArr)
             {
-                var tmp = "<i value=\"" + str + "\"/>" + Environment.NewLine;
+                var tmp = "Hello" + str + Environment.NewLine;
                 File.AppendAllText(outputPath, tmp);
             }
             
