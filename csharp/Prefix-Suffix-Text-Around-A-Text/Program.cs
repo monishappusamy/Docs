@@ -4,8 +4,8 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-            string inputPath = "C:\\test\\test.txt";
-            string outputPath = "C:\\test\\test2.txt";
+            string inputPath = "C:\\test\\input.txt";
+            string outputPath = "C:\\test\\output.txt";
 
             // Open the file to read from. 
             string readText = File.ReadAllText(inputPath);
