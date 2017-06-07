@@ -15,7 +15,7 @@ namespace ConsoleApplication
 
             foreach (var str in readTextArr)
             {
-                var tmp = "Hello" + str + Environment.NewLine;
+                var tmp = "Hello " + str + Environment.NewLine;
                 File.AppendAllText(outputPath, tmp);
             }
             
