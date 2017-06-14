@@ -1,0 +1,2 @@
+Print the contents of an array
+myArray.ToList().ForEach(Console.WriteLine)
