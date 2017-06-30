@@ -1,6 +1,11 @@
 Github commands
 Useful Links:
 http://nvie.com/posts/a-successful-git-branching-model/
+https://stackoverflow.com/questions/37104273/how-to-set-aliasses-in-the-git-bash-for-windows
+
+# set alias for git bash windows
+$ cd
+$ echo alias status=\'git status\' >> .bashrc
 
 $ git log
 $ git add <modified file name in git status> - Eg. git add README.md - will add only specific filename
