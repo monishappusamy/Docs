@@ -1,0 +1,8 @@
+<!-- https://wpftutorial.net/BindingExpressions.html -->
+
+<Button Command="{Binding Path=DataContext.AddCommand, 
+        RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type UserControl}}, 
+        PresentationTraceSources.TraceLevel=High}"
+        CommandParameter="{Binding}">
+</Button>
+
