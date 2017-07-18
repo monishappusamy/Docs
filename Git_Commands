@@ -26,8 +26,15 @@ $ git checkout -b <branch_name>
 #switched to the specified branch name
 $ git checkout <branch_name>
 
-# merge current branch with specified branch
+#merge current branch with specified branch
 $ git merge <branch_name>
+
+#if you diverged out of a master branch and merge it back with it and resolve conflicts
+git rebase master
+git rebase --continue
+
+#merge without fast forward
+git merge <branch_name> --no-ff
 
 # Delete a branch
 $ git branch -d <branch_name>
