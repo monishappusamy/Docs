@@ -45,6 +45,9 @@ git reset --hard
 #Reset to HEAD
 git reset --hard HEAD
 
+#list branches which contain the specified commit
+git branch --contains <commit>
+
 #To view the diff from UI
 gitk
 
