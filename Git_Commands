@@ -57,3 +57,6 @@ git diff <file path as shown by git status>
 #To Try
 #List of each commmits on oneline
 git log --pretty=oneline
+
+#uncommit your last commit (to stash your changes)
+git reset --soft HEAD~1
