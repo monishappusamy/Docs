@@ -61,7 +61,7 @@ git log --pretty=oneline
 #uncommit your last commit (to stash your changes)
 git reset --soft HEAD~1
 
-#Edit previous commit message
+#Edit old commit's commit message
 $ git rebase -i -p HEAD~10
 $ replace 'pick' with 'edit' in the vi => :wq
 $ git rebase --continue
