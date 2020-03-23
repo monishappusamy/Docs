@@ -1,0 +1,5 @@
+# to search text withing a log file
+grep "search_text" filename.log
+
+# to search under multiple files
+grep "search_text" filename-*.log
