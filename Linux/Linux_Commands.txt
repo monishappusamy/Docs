@@ -3,3 +3,6 @@ grep "search_text" filename.log
 
 # to search under multiple files
 grep "search_text" filename-*.log
+
+# grep in a continous stream
+tail -f file | grep --line-buffered my_pattern
